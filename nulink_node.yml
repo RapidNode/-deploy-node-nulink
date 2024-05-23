@@ -95,11 +95,11 @@
           #no_log: true
           when: node_action == "install"
 
-    - name: Pull NuLink Docker image
-      ansible.builtin.docker_image:
-        name: nulink/nulink:latest
-        source: pull
-      when: node_action == "install"
+#    - name: Pull NuLink Docker image
+#      ansible.builtin.docker_image:
+#        name: nulink/nulink:latest
+#        source: pull
+#      when: node_action == "install"
 
     - name: Create NuLink directory and copy keystore file
       block:
